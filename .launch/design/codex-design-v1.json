@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "run_id": "tank-game-20260819-224500",
+  "game": {
+    "official_name": "Tank Game",
+    "domain": "tankgame.wiki"
+  },
+  "provider": {
+    "name": "Codex",
+    "model": "gpt-5.6-sol",
+    "generated_at": "2026-08-19T15:23:25Z"
+  },
+  "fallback_reason": "Kimi candidate production was explicitly reassigned by the coordinator to Codex design.",
+  "research_approval_sha256": "5d99b07f4f4bea049056212b38a65aa91c5e139be507ea96a53bcae64bd106df",
+  "status": "ready_for_review",
+  "design_system": {
+    "theme": "A printed battlefield field manual: warm paper, hard ink borders, hazard labels, offset shadows, and a CSS-only top-down tank schematic. The direction is editorial and tactical rather than a generic dark gaming landing page.",
+    "palette": {
+      "bg": "#f2ead8",
+      "surface": "#fff9e9",
+      "text": "#171812",
+      "accent": "#f05832",
+      "secondary_accent": "#f6cf3d",
+      "utility": "#177b73"
+    },
+    "font_strategy": "Use a system condensed display stack for poster-like headings, a system sans-serif stack for readable body copy, and a system monospace stack for labels, controls, IDs, and verification notes. No remote font dependency.",
+    "spacing_scale": [
+      "4px",
+      "8px",
+      "12px",
+      "18px",
+      "24px",
+      "34px",
+      "46px",
+      "72px",
+      "100px"
+    ],
+    "responsive_rules": [
+      "At 1440px, use a centered 1180px content shell, a two-column hero, three-column topic cards, and full horizontal navigation.",
+      "At 768px, stack the hero visual below the copy, change three-column grids to two columns, and keep touch targets at least 42px high.",
+      "At 375px, hide the secondary header navigation, use one-column content, stack CTA groups, simplify timeline columns, and preserve at least 12px outer gutters without horizontal overflow.",
+      "Respect prefers-reduced-motion and retain visible keyboard focus outlines for links and buttons."
+    ]
+  },
+  "homepage": {
+    "hero": {
+      "headline": "DON'T SPAWN CLUELESS.",
+      "subheadline": "A fast, practical field manual for Tank Game by 7x3. Learn what to shoot, where your first stats go, and when to pick a fight.",
+      "primary_cta": {
+        "label": "Start the beginner briefing",
+        "target": "/beginner-guide"
+      },
+      "secondary_cta": {
+        "label": "Open official game",
+        "target": "https://www.roblox.com/games/119789365111500/Tank-Game",
+        "treatment": "small text link visually subordinate to the internal guide CTA"
+      }
+    },
+    "sections": [
+      "Core gameplay loop strip",
+      "Three task-led guide cards",
+      "Spawn-immunity opening callout",
+      "Accuracy policy pointing to the in-game Index",
+      "Independent-site disclaimer and internal footer links"
+    ]
+  },
+  "page_map": [
+    {
+      "path": "/",
+      "purpose": "Route new players into the beginner guide first, then expose codes and tank strategy as secondary learning paths."
+    },
+    {
+      "path": "/beginner-guide",
+      "purpose": "A time-ordered first-spawn sequence covering safe code redemption, controls, spawn immunity, food farming, early stats, upgrades, and common mistakes."
+    },
+    {
+      "path": "/codes",
+      "purpose": "A dated list of the four codes approved from the official description, with copy controls and a safe lobby redemption walkthrough."
+    },
+    {
+      "path": "/tanks",
+      "purpose": "Strategy by role and stat logic, explicitly avoiding a disputed fixed tank tree and directing players to the in-game Index."
+    }
+  ],
+  "components": [
+    "SiteHeader",
+    "SiteFooter",
+    "TankDiagram",
+    "CopyCodeButton",
+    "Field guide topic cards",
+    "Core loop strip",
+    "Opening timeline",
+    "Code rows",
+    "Role strategy cards",
+    "Verification notes"
+  ],
+  "assets": [
+    {
+      "name": "Top-down tank field schematic",
+      "type": "CSS illustration",
+      "source": "Original layout authored entirely with HTML and CSS; no third-party image asset.",
+      "license": "Project-owned original implementation"
+    }
+  ],
+  "approved_fact_ids_used": [
+    "fact-001",
+    "fact-002",
+    "fact-003",
+    "fact-006",
+    "fact-007",
+    "fact-008",
+    "fact-010",
+    "fact-011",
+    "fact-014",
+    "fact-015",
+    "fact-016",
+    "fact-017",
+    "fact-018",
+    "fact-019",
+    "fact-020",
+    "fact-022",
+    "fact-023"
+  ],
+  "files_changed": [
+    "app/layout.tsx",
+    "app/globals.css",
+    "app/page.tsx",
+    "app/beginner-guide/page.tsx",
+    "app/codes/page.tsx",
+    "app/tanks/page.tsx",
+    "components/SiteHeader.tsx",
+    "components/SiteFooter.tsx",
+    "components/CopyCodeButton.tsx",
+    "components/TankDiagram.tsx",
+    "package.json",
+    "next.config.mjs",
+    "tsconfig.json",
+    ".launch/design/codex-design-v1.json"
+  ],
+  "preview_command": "npm run dev"
+}

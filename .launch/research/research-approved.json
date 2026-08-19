@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "run_id": "tank-game-20260819-224500",
+  "game": {
+    "official_name": "Tank Game",
+    "domain": "tankgame.wiki"
+  },
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-08-19T15:11:48Z",
+  "approved_fact_ids": [
+    "fact-001",
+    "fact-002",
+    "fact-003",
+    "fact-004",
+    "fact-005",
+    "fact-006",
+    "fact-007",
+    "fact-008",
+    "fact-009",
+    "fact-010",
+    "fact-011",
+    "fact-014",
+    "fact-015",
+    "fact-016",
+    "fact-017",
+    "fact-018",
+    "fact-019",
+    "fact-020",
+    "fact-021",
+    "fact-022",
+    "fact-023",
+    "fact-025",
+    "fact-026",
+    "fact-027",
+    "fact-028"
+  ],
+  "rejected_facts": [
+    {
+      "id": "fact-012",
+      "reason": "The source page lists these level-15 classes, but the same page says its upgrade list may be incomplete and includes a reader report that many paths are wrong or missing. The exact class list is therefore not approved as reliable progression guidance."
+    },
+    {
+      "id": "fact-013",
+      "reason": "The source supports the general wording, but it belongs to the same tank-tree page that explicitly warns about missing upgrades and carries an unresolved accuracy complaint. The claimed progression cadence and level-60 unlock rule were not corroborated independently."
+    },
+    {
+      "id": "fact-024",
+      "reason": "This low-confidence fact reproduces a late-game upgrade tree whose own source says entries may be missing and whose comment section reports wrong and missing paths. It must not be used as an approved build path."
+    }
+  ],
+  "notes": [
+    "Codex independently opened the HTTPS sources through the configured system proxy; Grok's self-reported verification was not treated as approval.",
+    "Official game identity, root place ID, universe ID, developer group, description, classification, server cap, dates, badges, and game-pass response were cross-checked against live Roblox pages and APIs.",
+    "The beginner-guide gate is exceeded: approved facts cover the official shoot-food, level-up, stat-upgrade, tank-combat, gem, and tank-unlock loop; keyboard controls; spawn immunity; early stat priorities; starting-tank behavior; arena food shapes; shop currency; and code redemption safety.",
+    "Promo codes, display version, update timestamp, player-facing menus, currencies, and live game-pass availability are mutable and must be presented with the 2026-08-19 check date rather than as permanent promises.",
+    "No exact tank upgrade tree, level-15 class list, every-15-level cadence, or complete late-game build path is approved."
+  ]
+}
