@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "run_id": "tank-game-20260819-224500",
+  "status": "待研究",
+  "game": {
+    "official_name": "Tank Game",
+    "slug": "tank-game",
+    "roblox_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+    "place_id": "119789365111500"
+  },
+  "domain": "tankgame.wiki",
+  "repository": {
+    "fullName": "zhangtongxin888/tank-game",
+    "url": "https://github.com/zhangtongxin888/tank-game",
+    "localPath": "/Users/zhangtongxin/sites/tank-game"
+  },
+  "candidate_worktree_path": "/Users/zhangtongxin/sites/tank-game-kimi-candidate",
+  "allowed_kimi_paths": [
+    "app",
+    "components",
+    "public",
+    "src",
+    "styles",
+    "package.json",
+    "next.config.js",
+    "next.config.mjs",
+    "next.config.ts",
+    "tsconfig.json",
+    ".launch/design"
+  ],
+  "hosting": {
+    "target": "cloudflare-or-vercel"
+  },
+  "providers": {
+    "research": {"name": "Grok", "model": "grok-4.6"},
+    "design": {"name": "Kimi", "model": "kimi-code/k3"},
+    "code": {"name": "Codex", "model": "gpt-5.6-sol"}
+  }
+}
