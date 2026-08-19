@@ -2,7 +2,7 @@
   "schema_version": 1,
   "run_id": "tank-game-20260819-224500",
   "reviewed_by": "Codex",
-  "reviewed_at": "2026-08-19T15:48:06Z",
+  "reviewed_at": "2026-08-19T19:00:18Z",
   "design_package": {
     "path": ".launch/design/codex-design-v1.json",
     "sha256": "e8e41fa3912359e843bcbd9a9516e5e86d94491189ea7d26af1c39352a4722d6"
@@ -29,23 +29,27 @@
     {
       "width": 375,
       "source_review": "The max-width 720px rules provide a one-column hero, stacked actions, a keyboard-accessible mobile menu, compact timelines, and 12px outer gutters.",
-      "render_status": "blocked_pending_browser_lock"
+      "render_status": "pass",
+      "observed": "Formal homepage inspected at 375x812. The one-column hero, mobile menu, typography, metadata strip, and illustration render cleanly with no horizontal overflow (scrollWidth 375 equals clientWidth 375)."
     },
     {
       "width": 768,
       "source_review": "The max-width 980px rules stack the hero and maintain two-column topic cards with 42px-or-larger controls.",
-      "render_status": "blocked_pending_browser_lock"
+      "render_status": "pass",
+      "observed": "Formal homepage inspected at 768x1024. The stacked hero, full navigation, actions, metadata strip, and dossier illustration render cleanly with no horizontal overflow (scrollWidth 768 equals clientWidth 768)."
     },
     {
       "width": 1440,
       "source_review": "The desktop layout uses a centered 1180px shell, two-column hero, full navigation, and three-column content grids.",
-      "render_status": "blocked_pending_browser_lock"
+      "render_status": "pass",
+      "observed": "Formal homepage inspected at 1440x900. The centered two-column hero, full navigation, actions, illustration, and core-loop strip render cleanly with no horizontal overflow (scrollWidth 1440 equals clientWidth 1440)."
     }
   ],
   "primary_entry": {
     "label": "Start the beginner briefing",
     "target": "/beginner-guide",
-    "result": "pass_source_and_contract_test"
+    "result": "pass_live_render_and_navigation",
+    "observed": "At all three widths this is the largest button (275x58). Following it opened https://tankgame.wiki/beginner-guide; the official-game link is visually secondary."
   },
   "navigation_result": "All five indexable routes are linked through the header, footer, or in-page calls to action; a custom 404 returns users to the beginner guide.",
   "fact_review": {
@@ -68,7 +72,7 @@
       "Reduced-motion support",
       "Zoom is not disabled"
     ],
-    "render_status": "blocked_pending_browser_lock"
+    "render_status": "pass"
   },
   "issues_and_handling": [
     {
@@ -80,16 +84,16 @@
       "handling": "Added these within the formal implementation and verified lint, type checks, contract tests, build output, metadata, and route-to-sitemap parity."
     },
     {
-      "issue": "Rendered 375/768/1440 inspection requires the shared browser lock.",
-      "handling": "Coordinator declined the lock because Trade A Jellycat holds it and instructed this worker not to open Chrome. Results remain explicitly pending rather than being fabricated."
+      "issue": "Rendered 375/768/1440 inspection required exclusive browser access.",
+      "handling": "The coordinator granted the lock for Tank Game. The formal homepage passed all three rendered widths, the largest button was confirmed live, and the isolated rendering session was closed after inspection."
     }
   ],
   "browser_lock": {
-    "granted": false,
-    "current_holder": "Trade A Jellycat!",
-    "next_waiter": "Tap Squishies and Trade",
-    "coordinator_instruction": "Do not open Chrome, Spaceship, or Google Search Console."
+    "granted": true,
+    "scope": "Tank Game DNS, GSC, and rendered acceptance only",
+    "released": true,
+    "coordinator_instruction": "Use the lock only for Tank Game and stop Chrome, Spaceship, and GSC after completion."
   },
-  "decision": "pending",
-  "status": "blocked_pending_browser_lock"
+  "decision": "pending_coordinator_acceptance",
+  "status": "待总控验收"
 }
