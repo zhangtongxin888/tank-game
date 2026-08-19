@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "run_id": "tank-game-20260819-224500",
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-08-19T15:48:06Z",
+  "design_package": {
+    "path": ".launch/design/codex-design-v1.json",
+    "sha256": "e8e41fa3912359e843bcbd9a9516e5e86d94491189ea7d26af1c39352a4722d6"
+  },
+  "design_provider": {
+    "name": "Codex",
+    "model": "gpt-5.6-sol"
+  },
+  "fallback_reason": "The coordinator explicitly reassigned the unavailable Kimi design stage to Codex. No kimi-design-v1.json was created or represented as a Kimi artifact.",
+  "candidate_review": {
+    "candidate_path": "/Users/zhangtongxin/sites/tank-game-kimi-candidate",
+    "formal_path": "/Users/zhangtongxin/sites/tank-game",
+    "accepted_scope": [
+      "app",
+      "components",
+      "package.json",
+      "next.config.mjs",
+      "tsconfig.json"
+    ],
+    "rejected_scope": [],
+    "security_review": "No credentials, deployment configuration, remote metadata, or unrelated game files were copied from the candidate directory."
+  },
+  "viewport_checks": [
+    {
+      "width": 375,
+      "source_review": "The max-width 720px rules provide a one-column hero, stacked actions, a keyboard-accessible mobile menu, compact timelines, and 12px outer gutters.",
+      "render_status": "blocked_pending_browser_lock"
+    },
+    {
+      "width": 768,
+      "source_review": "The max-width 980px rules stack the hero and maintain two-column topic cards with 42px-or-larger controls.",
+      "render_status": "blocked_pending_browser_lock"
+    },
+    {
+      "width": 1440,
+      "source_review": "The desktop layout uses a centered 1180px shell, two-column hero, full navigation, and three-column content grids.",
+      "render_status": "blocked_pending_browser_lock"
+    }
+  ],
+  "primary_entry": {
+    "label": "Start the beginner briefing",
+    "target": "/beginner-guide",
+    "result": "pass_source_and_contract_test"
+  },
+  "navigation_result": "All five indexable routes are linked through the header, footer, or in-page calls to action; a custom 404 returns users to the beginner guide.",
+  "fact_review": {
+    "result": "pass",
+    "research_approval_sha256": "5d99b07f4f4bea049056212b38a65aa91c5e139be507ea96a53bcae64bd106df",
+    "notes": "Published gameplay, identity, code, control, and strategy claims remain within approved fact IDs. Rejected exact tank-tree claims are not presented as facts."
+  },
+  "asset_review": {
+    "result": "pass",
+    "notes": "The site uses project-authored CSS shapes and a project-authored generated Open Graph composition. No third-party image asset or unclear license is present."
+  },
+  "accessibility_review": {
+    "source_result": "pass",
+    "checks": [
+      "Semantic links and buttons",
+      "Skip link and main-content target",
+      "Visible focus states",
+      "Keyboard-accessible native mobile menu",
+      "aria-live copy confirmation",
+      "Reduced-motion support",
+      "Zoom is not disabled"
+    ],
+    "render_status": "blocked_pending_browser_lock"
+  },
+  "issues_and_handling": [
+    {
+      "issue": "The task template referenced .launch/design/kimi-design-v1.json, but the prior stage was explicitly reassigned to Codex.",
+      "handling": "Validated .launch/design/codex-design-v1.json with the same handoff validator and retained the required non-empty fallback reason."
+    },
+    {
+      "issue": "The candidate omitted FAQ, complete production metadata, robots, sitemap, structured data, security headers, and a dedicated 404.",
+      "handling": "Added these within the formal implementation and verified lint, type checks, contract tests, build output, metadata, and route-to-sitemap parity."
+    },
+    {
+      "issue": "Rendered 375/768/1440 inspection requires the shared browser lock.",
+      "handling": "Coordinator declined the lock because Trade A Jellycat holds it and instructed this worker not to open Chrome. Results remain explicitly pending rather than being fabricated."
+    }
+  ],
+  "browser_lock": {
+    "granted": false,
+    "current_holder": "Trade A Jellycat!",
+    "next_waiter": "Tap Squishies and Trade",
+    "coordinator_instruction": "Do not open Chrome, Spaceship, or Google Search Console."
+  },
+  "decision": "pending",
+  "status": "blocked_pending_browser_lock"
+}
