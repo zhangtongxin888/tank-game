@@ -1,12 +1,13 @@
 {
   "schema_version": 1,
-  "run_id": "tank-game-20260819-224500",
+  "run_id": "tank-game-20260820-043000",
   "game": {
     "official_name": "Tank Game",
     "domain": "tankgame.wiki"
   },
   "reviewed_by": "Codex",
-  "reviewed_at": "2026-08-19T15:11:48Z",
+  "reviewed_at": "2026-08-20T02:34:50Z",
+  "mutable_data_check_date": "2026-08-20",
   "approved_fact_ids": [
     "fact-001",
     "fact-002",
@@ -19,40 +20,171 @@
     "fact-009",
     "fact-010",
     "fact-011",
+    "fact-012",
+    "fact-013",
     "fact-014",
     "fact-015",
-    "fact-016",
-    "fact-017",
     "fact-018",
     "fact-019",
     "fact-020",
     "fact-021",
     "fact-022",
     "fact-023",
+    "fact-024",
     "fact-025",
     "fact-026",
     "fact-027",
-    "fact-028"
+    "fact-030",
+    "fact-031",
+    "fact-034",
+    "fact-036",
+    "fact-037",
+    "fact-038",
+    "fact-039",
+    "fact-040",
+    "fact-046",
+    "fact-048",
+    "fact-049",
+    "fact-055",
+    "fact-058",
+    "fact-060",
+    "fact-062",
+    "fact-064",
+    "fact-066",
+    "fact-067",
+    "fact-069",
+    "fact-071",
+    "fact-074"
+  ],
+  "dated_secondary_facts": [
+    {
+      "id": "fact-043",
+      "checked_at": "2026-08-20",
+      "reason": "Destructoid published this long list on 2026-08-17, but it is only a dated third-party snapshot. Only the four codes printed on the Roblox page are approved as current official codes."
+    },
+    {
+      "id": "fact-044",
+      "checked_at": "2026-08-20",
+      "reason": "Pro Game Guides still displayed a long list dated 2026-08-15. It is retained only as evidence that third-party lists can lag the official four-code page."
+    },
+    {
+      "id": "fact-047",
+      "checked_at": "2026-08-20",
+      "reason": "Rolimon's confirmed the all-time peak, but its playtime and live counters were already changing during review. These figures may be used only as a dated tracker snapshot."
+    }
   ],
   "rejected_facts": [
     {
-      "id": "fact-012",
-      "reason": "The source page lists these level-15 classes, but the same page says its upgrade list may be incomplete and includes a reader report that many paths are wrong or missing. The exact class list is therefore not approved as reliable progression guidance."
+      "id": "fact-016",
+      "reason": "The live Games API had already changed, and it does not expose the earlier point-in-time values needed to independently reproduce this exact snapshot."
     },
     {
-      "id": "fact-013",
-      "reason": "The source supports the general wording, but it belongs to the same tank-tree page that explicitly warns about missing upgrades and carries an unresolved accuracy complaint. The claimed progression cadence and level-60 unlock rule were not corroborated independently."
+      "id": "fact-017",
+      "reason": "The votes endpoint had already moved to 665,071 upvotes and 74,326 downvotes, so the exact earlier snapshot could not be independently reproduced."
     },
     {
-      "id": "fact-024",
-      "reason": "This low-confidence fact reproduces a late-game upgrade tree whose own source says entries may be missing and whose comment section reports wrong and missing paths. It must not be used as an approved build path."
+      "id": "fact-028",
+      "reason": "The exact class list comes from an incomplete secondary tank table whose own comments report wrong and missing paths."
+    },
+    {
+      "id": "fact-029",
+      "reason": "The claimed upgrade cadence and level-60 shop rule rely on the same disputed secondary tank table and were not corroborated by an official source."
+    },
+    {
+      "id": "fact-032",
+      "reason": "The Sportskeeda source returned HTTP 405 during independent review, and the claim also merges gems and Diamonds without official confirmation."
+    },
+    {
+      "id": "fact-033",
+      "reason": "Pocket Tactics verifies a blue tick control, but this fact also attributes left-side agreement to additional outlets not represented by its source URL. Use the separately verified redemption facts instead."
+    },
+    {
+      "id": "fact-035",
+      "reason": "GamesRadar verifies that codes are not case-sensitive, but the one-redemption-per-account portion is attributed to an inaccessible Sportskeeda page."
+    },
+    {
+      "id": "fact-041",
+      "reason": "This is a partial late-game tree from a page that admits missing upgrades and carries a direct accuracy complaint."
+    },
+    {
+      "id": "fact-042",
+      "reason": "The Flame and Mega Freezer availability claims come from a May 2026 tier list and were not confirmed for version 2.4."
+    },
+    {
+      "id": "fact-045",
+      "reason": "The source is currently dated 2026-08-14, not 2026-08-04 as claimed."
+    },
+    {
+      "id": "fact-050",
+      "reason": "The source is an old full-path article that includes unverified progression routes and an unsupported purchasable Titan claim."
+    },
+    {
+      "id": "fact-051",
+      "reason": "The Fandom page returned HTTP 403 and could not be independently verified; Fandom is not accepted as an official source."
+    },
+    {
+      "id": "fact-052",
+      "reason": "The Fandom page returned HTTP 403 and could not be independently verified; its tank coverage is also explicitly incomplete."
+    },
+    {
+      "id": "fact-053",
+      "reason": "The source URL verifies Tank Simulator only, while the compound claim also names a second experience without linking its source."
+    },
+    {
+      "id": "fact-054",
+      "reason": "The source returned HTTP 405, and official copy does not prove whether gems and Diamonds are the same currency."
+    },
+    {
+      "id": "fact-056",
+      "reason": "An old code name is not reliable evidence of a current group perk, and the official page does not print IAMGROUP."
+    },
+    {
+      "id": "fact-057",
+      "reason": "The official page confirms XP and gem rewards but does not prove the added claim that gems are specifically a shop-unlock currency."
+    },
+    {
+      "id": "fact-059",
+      "reason": "GamesRadar supports the combat warning, but it does not support the ranking claim that this is the most repeated warning after exploit bans."
+    },
+    {
+      "id": "fact-061",
+      "reason": "Promo-code names are not patch notes and do not prove that the named features or fixes shipped."
+    },
+    {
+      "id": "fact-063",
+      "reason": "The Roblox group API confirms the group URL but does not contain the Discord invite included in this compound fact."
+    },
+    {
+      "id": "fact-065",
+      "reason": "The source returned HTTP 405, and the claimed starting stat cap was not independently confirmed in version 2.4."
+    },
+    {
+      "id": "fact-068",
+      "reason": "The Sportskeeda source returned HTTP 405, so the already-redeemed behavior was not verified from the cited page."
+    },
+    {
+      "id": "fact-070",
+      "reason": "The source supports a level-15 menu but not the subjective irreversible framing, and its later-path data is disputed."
+    },
+    {
+      "id": "fact-072",
+      "reason": "The API confirms the 2.4 title and update timestamp, but a code name alone does not prove which stats were rebalanced or that old rankings shifted."
+    },
+    {
+      "id": "fact-073",
+      "reason": "The Games API supports a 20-player cap but not tracker playtime or the inference about short lives."
+    },
+    {
+      "id": "fact-075",
+      "reason": "The Fandom page returned HTTP 403. The safe rule is recorded separately: never present Fandom as developer-approved."
     }
   ],
   "notes": [
-    "Codex independently opened the HTTPS sources through the configured system proxy; Grok's self-reported verification was not treated as approval.",
-    "Official game identity, root place ID, universe ID, developer group, description, classification, server cap, dates, badges, and game-pass response were cross-checked against live Roblox pages and APIs.",
-    "The beginner-guide gate is exceeded: approved facts cover the official shoot-food, level-up, stat-upgrade, tank-combat, gem, and tank-unlock loop; keyboard controls; spawn immunity; early stat priorities; starting-tank behavior; arena food shapes; shop currency; and code redemption safety.",
-    "Promo codes, display version, update timestamp, player-facing menus, currencies, and live game-pass availability are mutable and must be presented with the 2026-08-19 check date rather than as permanent promises.",
-    "No exact tank upgrade tree, level-15 class list, every-15-level cadence, or complete late-game build path is approved."
+    "Codex independently requested all 24 distinct source URLs on 2026-08-20 through the configured system proxy. Fandom returned HTTP 403 and Sportskeeda returned HTTP 405, so facts that depended on their unreadable content were rejected.",
+    "Official Roblox pages and APIs confirm the game identity, root place, universe, verified 7x3 creator group, official gameplay loop, badges, current public game-pass state, and the four official promo codes.",
+    "The current official code set is REBALANCEAGAIN, HAVEFUN, NEWCURRENCY, and HEADSTART. Third-party long lists are not approved as current official codes and are isolated under dated_secondary_facts.",
+    "The beginner gate is met by approved official gameplay fact fact-007 and approved dated secondary beginner facts fact-026, fact-027, fact-030, and fact-031, plus official badge goals fact-018 through fact-024 and fact-069.",
+    "Mutable values, including title version, update time, group membership, player counters, votes, badge award counts, tracker statistics, codes, and public game-pass availability, must be shown with the 2026-08-20 check date.",
+    "Do not publish a complete tank tree, call Fandom official, describe the offsale hello pass as purchasable, or say an exploiting ban can be appealed."
   ]
 }

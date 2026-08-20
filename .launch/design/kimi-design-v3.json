@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "run_id": "tank-game-20260820-043000",
+  "game": {
+    "official_name": "Tank Game",
+    "domain": "tankgame.wiki"
+  },
+  "provider": {
+    "name": "Kimi",
+    "model": "kimi-code/k3",
+    "generated_at": "2026-08-20T03:30:00Z"
+  },
+  "research_approval_sha256": "c18be1e92416a7ffe8b05213ba71f82232e1769434fc63ab4f8dfa9018c1e190",
+  "status": "ready_for_review",
+  "supersedes": ".launch/design/codex-design-v1.json",
+  "design_system": {
+    "theme": "Steel Arena — chunky arcade-military UI: dark steel hero with a CSS tank battle scene, blaze orange accents, khaki paper content sections; visually unrelated to the farm-game candidate style",
+    "palette": {
+      "ink": "#20241c",
+      "paper": "#f2efe1",
+      "sand": "#e9e3cb",
+      "steel": "#22271e",
+      "khaki": "#d8d0b2",
+      "blaze": "#ff7d1f",
+      "blaze_dark": "#d95f00",
+      "army": "#5c7a3d",
+      "army_dark": "#3b5227",
+      "danger": "#e0472f",
+      "mint": "#e2ebcf"
+    },
+    "font_strategy": "Arial Black / Arial Rounded MT Bold / Trebuchet MS display fallbacks for a stencil-like military feel, system sans for body; no external font dependency.",
+    "signature_elements": [
+      "Dark hero with crosshair grid overlay and a CSS-only arena scene: animated tank (aiming barrel, muzzle flash), floating square/triangle/pentagon food shapes, pulsing crosshair, immunity chip, WASD/E/Q control chip",
+      "Orange codes spotlight band on the homepage with the four official code chips",
+      "Tap-to-copy code cards on /codes/ (navigator.clipboard with fallback)",
+      "PHASE chips on the dark progression section",
+      "Hay-style orange table headers, numbered step rows, dashed policy callouts shared across subpages",
+      "PIL-generated og.png (1200x630) matching the Steel Arena theme"
+    ],
+    "responsive_rules": [
+      "375px: single column, full-width CTAs, hamburger nav, arena scene scaled with muzzle/immunity chip hidden, tables scroll inside their wrapper only",
+      "768px: single-column hero, two-column grids, non-sticky guide contents",
+      "1440px: 1160px content shell, two-column hero, three/four-column grids",
+      "html/body overflow-x: clip; verified scrollWidth === viewport width at 375/768/1440 on all 8 pages (24/24)",
+      "prefers-reduced-motion disables all scene animations"
+    ]
+  },
+  "homepage": {
+    "hero": {
+      "badge": "Roblox · Simulation / Incremental · by 7x3",
+      "headline": "Spawn small. Leave the arena huge.",
+      "primary_cta": {
+        "label": "Start the beginner guide →",
+        "target": "/beginner-guide/",
+        "is_internal": true
+      },
+      "secondary_cta": {
+        "label": "See the core loop",
+        "target": "#core-loop"
+      }
+    },
+    "sections": [
+      {"id": "explore", "title": "Every system, one page each.", "purpose": "Directory grid to all system pages."},
+      {"id": "core-loop", "title": "Four moves every life runs on.", "purpose": "Food XP, E stats, Q classes, gems from kills."},
+      {"id": "codes-band", "title": "Four official codes live right now.", "purpose": "The four official codes with rewards, dated Aug 20, 2026."},
+      {"id": "progression", "title": "One life, four phases.", "purpose": "Immunity farm, stat stacking, class commits, gem hunts."},
+      {"id": "mistakes", "title": "Four ways new tanks get scrapped.", "purpose": "Mid-fight redeeming, ignoring bullet health, farm barrels for PVP, 30-code dumps."},
+      {"id": "faq", "title": "Tank Game FAQ.", "purpose": "Teaser accordions linking to /faq/."}
+    ]
+  },
+  "page_map": [
+    {"path": "/", "purpose": "Hub: arena hero, directory, core loop, official codes band, progression phases, mistakes, FAQ teaser."},
+    {"path": "/beginner-guide/", "purpose": "First 10 minutes: 5-step localStorage checklist (lobby codes, immunity farm, first stats, first class, first gems) plus next-reads and beginner FAQ."},
+    {"path": "/codes/", "purpose": "The four official codes with copy buttons, lobby-safe redeem steps, why 30-code dumps are ignored, codes FAQ."},
+    {"path": "/tanks/", "purpose": "How class upgrades work, in-game Index over blog trees, frontal vs omnidirectional PVP advice, extra-places note."},
+    {"path": "/stats/", "purpose": "Beginner stat order (bullet damage, bullet health, HP/regen) and ranged vs melee priority table."},
+    {"path": "/badges/", "purpose": "All six official badges table, rarity read from award counts, farming strategy."},
+    {"path": "/gems/", "purpose": "Gem earning (kills + two codes), XP-vs-gems two-track table, gems/Diamonds naming uncertainty, no-priced-pass proof."},
+    {"path": "/faq/", "purpose": "Identity card (IDs, 7x3, version 2.4), gameplay/codes/community accordions, exploit ban, Tank Simulator distinction."}
+  ],
+  "approved_fact_ids_used": [
+    "fact-001", "fact-002", "fact-003", "fact-004", "fact-005", "fact-007", "fact-008", "fact-009",
+    "fact-010", "fact-011", "fact-012", "fact-013", "fact-014", "fact-015", "fact-018", "fact-019",
+    "fact-020", "fact-021", "fact-022", "fact-023", "fact-024", "fact-025", "fact-026", "fact-027",
+    "fact-030", "fact-031", "fact-034", "fact-036", "fact-037", "fact-038", "fact-039", "fact-040",
+    "fact-046", "fact-048", "fact-049", "fact-055", "fact-058", "fact-060", "fact-062", "fact-064",
+    "fact-066", "fact-067", "fact-069", "fact-071", "fact-074"
+  ],
+  "fact_usage_policy": {
+    "review_date_label": "Facts checked August 20, 2026",
+    "official_codes_highlighted": ["REBALANCEAGAIN", "HAVEFUN", "NEWCURRENCY", "HEADSTART"],
+    "excluded_claims": [
+      "Any code beyond the four official strings (third-party long lists mentioned only as dated, lagging snapshots, never reproduced)",
+      "A complete tank tree, exact class unlock levels, or per-stat cap numbers (disputed/rejected)",
+      "Case-sensitivity or one-redemption-per-account claims (rejected)",
+      "Gems-equals-Diamonds equivalence (presented only as an open naming question)",
+      "Live CCU, visits, votes, member counts, tracker playtime",
+      "Any priced gamepass or Titan price; the hello pass is always described as offsale",
+      "Fandom or any fan wiki as an official source",
+      "Tank Simulator / Tank Game Simulator identity confusion"
+    ],
+    "external_links": "Only the official Roblox game page is linked; the Discord invite appears as plain text only.",
+    "mutable_data_rule": "Codes, version tag, prices/pass status, badge award counts, group perks, and update contents always carry the 2026-08-20 check date and an in-game confirmation prompt."
+  },
+  "files_changed": [
+    "public/index.html",
+    "public/beginner-guide/index.html",
+    "public/codes/index.html",
+    "public/tanks/index.html",
+    "public/stats/index.html",
+    "public/badges/index.html",
+    "public/gems/index.html",
+    "public/faq/index.html",
+    "public/styles.css",
+    "public/app.js",
+    "public/robots.txt",
+    "public/sitemap.xml",
+    "public/og.png",
+    ".launch/design/kimi-design-v3.json"
+  ],
+  "validation_targets": {
+    "viewports": [375, 768, 1440],
+    "no_horizontal_scroll": true,
+    "primary_cta_is_internal": true,
+    "primary_cta_target": "/beginner-guide/ or #quick-start",
+    "checks_run": [
+      "Headless browser: scrollWidth === innerWidth for all 8 pages at 375, 768, 1440 (24/24) — passed",
+      "All 8 routes load on the static preview server — passed",
+      "Screenshots: .launch/design/v3-tank-home-1440.jpeg, v3-tank-home-375.jpeg, v3-tank-codes-768.jpeg"
+    ],
+    "notes": "Existing Next.js app (Codex v1) left untouched; this v3 is a standalone static site under public/ as required by the preview command."
+  },
+  "preview_command": "python3 -m http.server 4174 --directory public"
+}

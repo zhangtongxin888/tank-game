@@ -1,99 +1,122 @@
 {
   "schema_version": 1,
-  "run_id": "tank-game-20260819-224500",
+  "run_id": "tank-game-20260820-043000",
   "reviewed_by": "Codex",
-  "reviewed_at": "2026-08-19T19:00:18Z",
+  "reviewed_at": "2026-08-20T04:29:30Z",
   "design_package": {
-    "path": ".launch/design/codex-design-v1.json",
-    "sha256": "e8e41fa3912359e843bcbd9a9516e5e86d94491189ea7d26af1c39352a4722d6"
+    "path": ".launch/design/kimi-design-v3.json",
+    "sha256": "01f51b05d1f1c206f524d484b7af0ebb4adec7aa8b73576b390eff1b08dc2522"
   },
   "design_provider": {
-    "name": "Codex",
-    "model": "gpt-5.6-sol"
+    "name": "Kimi",
+    "model": "kimi-code/k3"
   },
-  "fallback_reason": "The coordinator explicitly reassigned the unavailable Kimi design stage to Codex. No kimi-design-v1.json was created or represented as a Kimi artifact.",
   "candidate_review": {
     "candidate_path": "/Users/zhangtongxin/sites/tank-game-kimi-candidate",
     "formal_path": "/Users/zhangtongxin/sites/tank-game",
     "accepted_scope": [
-      "app",
-      "components",
-      "package.json",
-      "next.config.mjs",
-      "tsconfig.json"
+      "public/index.html",
+      "public/beginner-guide/index.html",
+      "public/codes/index.html",
+      "public/tanks/index.html",
+      "public/stats/index.html",
+      "public/badges/index.html",
+      "public/gems/index.html",
+      "public/faq/index.html",
+      "public/styles.css",
+      "public/app.js",
+      "public/robots.txt",
+      "public/sitemap.xml",
+      "public/og.png"
     ],
-    "rejected_scope": [],
-    "security_review": "No credentials, deployment configuration, remote metadata, or unrelated game files were copied from the candidate directory."
+    "rejected_scope": [
+      "Candidate Next.js source and dependencies were not copied because Kimi v3 is the approved static public/ implementation.",
+      "Candidate Git metadata, deployment metadata, environment files, credentials, and unrelated files were not accepted."
+    ],
+    "security_review": "The accepted public files contain no credentials, deployment tokens, remote metadata, or unrelated-game assets. The formal repository's existing verification and commercial-package files were preserved and not modified."
+  },
+  "production_integration": {
+    "strategy": "vercel_static_output",
+    "output_directory": "public",
+    "route_count": 8,
+    "sitemap_url_count": 8,
+    "candidate_public_files_byte_identical": true,
+    "commercial_package_modified": false
   },
   "viewport_checks": [
     {
       "width": 375,
-      "source_review": "The max-width 720px rules provide a one-column hero, stacked actions, a keyboard-accessible mobile menu, compact timelines, and 12px outer gutters.",
+      "height": 812,
+      "routes_checked": 8,
       "render_status": "pass",
-      "observed": "Formal homepage inspected at 375x812. The one-column hero, mobile menu, typography, metadata strip, and illustration render cleanly with no horizontal overflow (scrollWidth 375 equals clientWidth 375)."
+      "overflow_result": "All 8 routes reported scrollWidth 375 equal to clientWidth 375.",
+      "evidence": ".launch/acceptance/screenshots/kimi-v3-home-375.png"
     },
     {
       "width": 768,
-      "source_review": "The max-width 980px rules stack the hero and maintain two-column topic cards with 42px-or-larger controls.",
+      "height": 1024,
+      "routes_checked": 8,
       "render_status": "pass",
-      "observed": "Formal homepage inspected at 768x1024. The stacked hero, full navigation, actions, metadata strip, and dossier illustration render cleanly with no horizontal overflow (scrollWidth 768 equals clientWidth 768)."
+      "overflow_result": "All 8 routes reported scrollWidth 768 equal to clientWidth 768.",
+      "evidence": ".launch/acceptance/screenshots/kimi-v3-codes-768.png"
     },
     {
       "width": 1440,
-      "source_review": "The desktop layout uses a centered 1180px shell, two-column hero, full navigation, and three-column content grids.",
+      "height": 900,
+      "routes_checked": 8,
       "render_status": "pass",
-      "observed": "Formal homepage inspected at 1440x900. The centered two-column hero, full navigation, actions, illustration, and core-loop strip render cleanly with no horizontal overflow (scrollWidth 1440 equals clientWidth 1440)."
+      "overflow_result": "All 8 routes reported scrollWidth 1440 equal to clientWidth 1440.",
+      "evidence": ".launch/acceptance/screenshots/kimi-v3-home-1440.png"
     }
   ],
   "primary_entry": {
-    "label": "Start the beginner briefing",
-    "target": "/beginner-guide",
-    "result": "pass_live_render_and_navigation",
-    "observed": "At all three widths this is the largest button (275x58). Following it opened https://tankgame.wiki/beginner-guide; the official-game link is visually secondary."
+    "label": "Start the beginner guide",
+    "target": "/beginner-guide/",
+    "result": "pass_render_and_contract_test",
+    "observed": "The largest homepage button is the orange primary action and leads to the internal beginner guide; the official Roblox game is a smaller footer link."
   },
-  "navigation_result": "All five indexable routes are linked through the header, footer, or in-page calls to action; a custom 404 returns users to the beginner guide.",
+  "navigation_result": "The shared header and footer expose all 8 indexable routes, while page-specific calls to action create natural paths among beginner, codes, tanks, stats, badges, gems, and FAQ content.",
   "fact_review": {
     "result": "pass",
-    "research_approval_sha256": "5d99b07f4f4bea049056212b38a65aa91c5e139be507ea96a53bcae64bd106df",
-    "notes": "Published gameplay, identity, code, control, and strategy claims remain within approved fact IDs. Rejected exact tank-tree claims are not presented as facts."
+    "research_approval_sha256": "c18be1e92416a7ffe8b05213ba71f82232e1769434fc63ab4f8dfa9018c1e190",
+    "notes": "Published identity, gameplay, progression, badge, stat, gem, and code claims stay within approved fact IDs. Mutable claims carry the August 20, 2026 check date, and disputed exact tank trees are not presented as fact."
+  },
+  "codes_review": {
+    "result": "pass",
+    "highlighted_codes": [
+      "REBALANCEAGAIN",
+      "HAVEFUN",
+      "NEWCURRENCY",
+      "HEADSTART"
+    ],
+    "notes": "Only these four official-page codes appear as prominent chips or copy cards; long third-party lists are explicitly rejected."
   },
   "asset_review": {
     "result": "pass",
-    "notes": "The site uses project-authored CSS shapes and a project-authored generated Open Graph composition. No third-party image asset or unclear license is present."
+    "notes": "The UI uses project-authored CSS shapes and the Kimi package's project-authored og.png. It has no external font, script, image, or unclear-license dependency."
   },
   "accessibility_review": {
     "source_result": "pass",
+    "render_status": "pass",
     "checks": [
-      "Semantic links and buttons",
+      "Semantic links, native buttons, details/summary accordions, and labeled navigation",
       "Skip link and main-content target",
-      "Visible focus states",
-      "Keyboard-accessible native mobile menu",
-      "aria-live copy confirmation",
-      "Reduced-motion support",
-      "Zoom is not disabled"
-    ],
-    "render_status": "pass"
+      "Visible focus styles and keyboard-operable mobile navigation",
+      "Copy buttons retain readable fallback text",
+      "Reduced-motion styles disable scene animation",
+      "Viewport metadata permits normal browser zoom"
+    ]
   },
   "issues_and_handling": [
     {
-      "issue": "The task template referenced .launch/design/kimi-design-v1.json, but the prior stage was explicitly reassigned to Codex.",
-      "handling": "Validated .launch/design/codex-design-v1.json with the same handoff validator and retained the required non-empty fallback reason."
+      "issue": "The formal Vercel project was configured as Next.js while the approved Kimi v3 implementation is a static public/ site.",
+      "handling": "Added an explicit Vercel static-output configuration and static contract build without deleting or changing the retained Next.js and commercial-package source modules."
     },
     {
-      "issue": "The candidate omitted FAQ, complete production metadata, robots, sitemap, structured data, security headers, and a dedicated 404.",
-      "handling": "Added these within the formal implementation and verified lint, type checks, contract tests, build output, metadata, and route-to-sitemap parity."
-    },
-    {
-      "issue": "Rendered 375/768/1440 inspection required exclusive browser access.",
-      "handling": "The coordinator granted the lock for Tank Game. The formal homepage passed all three rendered widths, the largest button was confirmed live, and the isolated rendering session was closed after inspection."
+      "issue": "The sitemap grows from 5 to 8 canonical HTML URLs.",
+      "handling": "The production contract enforces exact route-to-sitemap parity; the existing GSC property will be refreshed after the 8-page production deployment without redoing ownership."
     }
   ],
-  "browser_lock": {
-    "granted": true,
-    "scope": "Tank Game DNS, GSC, and rendered acceptance only",
-    "released": true,
-    "coordinator_instruction": "Use the lock only for Tank Game and stop Chrome, Spaceship, and GSC after completion."
-  },
-  "decision": "pending_coordinator_acceptance",
-  "status": "待总控验收"
+  "decision": "approved",
+  "status": "ready_for_production"
 }

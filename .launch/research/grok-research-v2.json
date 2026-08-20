@@ -1,0 +1,976 @@
+{
+  "schema_version": 1,
+  "run_id": "tank-game-20260820-043000",
+  "game": {
+    "official_name": "Tank Game",
+    "domain": "tankgame.wiki",
+    "roblox_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+    "place_id": "119789365111500",
+    "universe_id": "8520148363",
+    "developer": "7x3"
+  },
+  "provider": {
+    "name": "Grok",
+    "model": "grok-4.6",
+    "generated_at": "2026-08-20T04:30:00Z"
+  },
+  "status": "complete",
+  "expansion_note": "v2 research expansion (~3x v1). Coordinator collected official Roblox APIs plus dated secondary guides. Codex must independently re-open every source_url; do not treat this file as approved.",
+  "facts": [
+    {
+      "id": "fact-001",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "The official Roblox experience is Tank Game. The Games API display name at this check is 💥 Tank Game! [2.4], listed at /games/119789365111500/Tank-Game.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=8520148363",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-002",
+      "category": "identity",
+      "subject": "developer",
+      "claim": "Tank Game is created by the verified Roblox group 7x3 (community id 111185671). The game page credits the experience as By 7x3.",
+      "source_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-003",
+      "category": "identity",
+      "subject": "place_id",
+      "claim": "The root place ID for Tank Game is 119789365111500.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=8520148363",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-004",
+      "category": "identity",
+      "subject": "universe_id",
+      "claim": "The universe ID for place 119789365111500 is 8520148363.",
+      "source_url": "https://apis.roblox.com/universes/v1/places/119789365111500/universe",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-005",
+      "category": "identity",
+      "subject": "developer",
+      "claim": "7x3 group 111185671 is a public verified group whose owner is supportTheBlueFan (userId 3994645187). The group description is 'Group for perks, benefits and community!' and public entry is allowed.",
+      "source_url": "https://groups.roblox.com/v1/groups/111185671",
+      "source_type": "creator",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-006",
+      "category": "identity",
+      "subject": "developer",
+      "claim": "At this 2026-08-20 check the 7x3 group reported about 4,728,359 members and community tier 3.",
+      "source_url": "https://groups.roblox.com/v1/groups/111185671",
+      "source_type": "creator",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-007",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official HOW TO PLAY: shoot at food for levels; level up and upgrade stats; destroy tanks and earn gems; unlock over 150 unique tanks. Named stats on the page are damage, health, and speed.",
+      "source_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-008",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Roblox classifies the experience as Simulation / Incremental Simulator, with a 20-player server cap, MorphToR15 avatars, and copyingAllowed=false.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=8520148363",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-009",
+      "category": "update",
+      "subject": "update",
+      "claim": "The Games API reported the universe created on 2025-08-23T10:55:18.7Z and last updated on 2026-08-17T20:26:12.237Z. The live display name includes version tag [2.4].",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=8520148363",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-010",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "As of this check the official Roblox description lists four promo codes: REBALANCEAGAIN +250,000 XP, HAVEFUN +200,000 XP, NEWCURRENCY +50,000 gems, and HEADSTART +25,000 gems.",
+      "source_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-011",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Official code REBALANCEAGAIN is printed on the game page for +250,000 XP.",
+      "source_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-012",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Official code HAVEFUN is printed on the game page for +200,000 XP.",
+      "source_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-013",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Official code NEWCURRENCY is printed on the game page for +50,000 gems.",
+      "source_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-014",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Official code HEADSTART is printed on the game page for +25,000 gems.",
+      "source_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-015",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "The official description warns that all exploiters are permanently banned and that an exploiting ban cannot be appealed.",
+      "source_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-016",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "Snapshot only for 2026-08-20: Games API reported about 7,353 playing, 237,772,053 visits, and 3,102,251 favorites.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=8520148363",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-017",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "Snapshot only for 2026-08-20: votes endpoint reported 665,069 upVotes and 74,325 downVotes.",
+      "source_url": "https://games.roblox.com/v1/games/votes?universeIds=8520148363",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-018",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official badge The Fun is Starting! is awarded for destroying 100 squares.",
+      "source_url": "https://badges.roblox.com/v1/universes/8520148363/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-019",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official badge Square Dominator! is awarded for destroying 10,000 squares.",
+      "source_url": "https://badges.roblox.com/v1/universes/8520148363/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-020",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official badge This is Better.. is awarded for destroying 100 triangles.",
+      "source_url": "https://badges.roblox.com/v1/universes/8520148363/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-021",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official badge Trigonometry! is awarded for destroying 10,000 triangles.",
+      "source_url": "https://badges.roblox.com/v1/universes/8520148363/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-022",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official badge Reinforced! is awarded for destroying 100 pentagons.",
+      "source_url": "https://badges.roblox.com/v1/universes/8520148363/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-023",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Official badge Pentagon Official! is awarded for destroying 10,000 pentagons.",
+      "source_url": "https://badges.roblox.com/v1/universes/8520148363/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-024",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "The six published badges prove arena 'food' includes at least squares, triangles, and pentagons, each with 100-destroy and 10,000-destroy goals.",
+      "source_url": "https://badges.roblox.com/v1/universes/8520148363/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-025",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "The universe game-pass catalog returned only one pass named hello (id 1480340364), with isForSale=false and no price. No priced on-sale gamepasses were listed.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/8520148363/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-026",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Default keyboard controls reported by BloxInformer: WASD to move, E to open the stats upgrade menu, and Q to open the tank upgrade menu.",
+      "source_url": "https://bloxinformer.com/wikis/tank-game/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-027",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "New tanks get a short spawn-immunity window so they can shoot food and start building before other players can fight them.",
+      "source_url": "https://bloxinformer.com/wikis/tank-game/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-028",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "The first tank-class upgrade becomes available at level 15 through the Q menu. BloxInformer lists Double, Scout, Spammer, Side, Grinder, and Freezer as level-15 options, with Flame listed as available to 7x3 group members.",
+      "source_url": "https://bloxinformer.com/wikis/tank-game/tanks",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-029",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Further tank-class upgrades appear around every 15 levels and often require a specific prior path. BloxInformer says tanks at level 60 and above must first be unlocked in the lobby Tanks Shop using Diamonds earned from play.",
+      "source_url": "https://bloxinformer.com/wikis/tank-game/tanks",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-030",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "BloxInformer's beginner guide recommends putting early stat points into bullet damage and bullet health so shots can pierce weaker enemy bullets after spawn immunity ends, then investing in max HP or HP regen.",
+      "source_url": "https://bloxinformer.com/wikis/tank-game/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-031",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Beebom describes the start as spawning as a small circular tank with a single turret, then shooting colorful cubes and other shapes for XP. Later upgrades can add turrets or change shots to flame or freeze.",
+      "source_url": "https://beebom.com/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-032",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Sportskeeda reports that Diamonds (also called gems in the official description and most code lists) are the primary shop currency. They buy tank unlocks in the Tank Shop and raise per-stat capacity. The same page says each attribute starts with a 7-point cap that gems can raise.",
+      "source_url": "https://www.sportskeeda.com/roblox-news/tank-game-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-033",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Promo codes are redeemed in-game through a blue tick or checkmark icon on the left side of the screen. Players type or paste the code and press Redeem. Pocket Tactics, Destructoid, and Sportskeeda agree on a left-side codes control.",
+      "source_url": "https://www.pockettactics.com/tank-game-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-034",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Destructoid's 2026-08-17 steps: run the game, press the codes button on the left, type into the text box, hit Redeem.",
+      "source_url": "https://www.destructoid.com/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-035",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "GamesRadar and Sportskeeda both report that Tank Game codes are not case-sensitive. Sportskeeda also shows an already-redeemed error: each working code can be claimed only once per account.",
+      "source_url": "https://www.gamesradar.com/games/simulation/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-036",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "GamesRadar warns that the game does not pause while the codes menu is open. Unless the player is in the lobby, other tanks can still shoot them during redemption.",
+      "source_url": "https://www.gamesradar.com/games/simulation/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-037",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Multiple secondary outlets point players to Discord invite https://discord.com/invite/WgCdbaMrrq (codes channel) for new codes, and to the 7x3 Roblox group for exclusive in-game upgrades. Beebom, Pocket Tactics, Sportskeeda, Eurogamer, and Destructoid cite the same Discord invite.",
+      "source_url": "https://beebom.com/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-038",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Destructoid's tier-list article says the game now includes an Index that shows tank build paths, and that Destructoid removed its own path tables for that reason.",
+      "source_url": "https://www.destructoid.com/tank-game-tier-list/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-039",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Destructoid recommends maxing Damage and Fire Rate for ranged tanks (Penetration and Laser Range on Rail) and Health, Body Damage, and Speed for melee tanks.",
+      "source_url": "https://www.destructoid.com/tank-game-tier-list/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-040",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "Destructoid argues omnidirectional tanks (side and rear barrels) are weaker in direct PVP because that DPS cannot be aimed, even if they farm well in the middle of the map. Frontal-barrel tanks are described as the more reliable PVP choice.",
+      "source_url": "https://www.destructoid.com/tank-game-tier-list/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-041",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "BloxInformer lists later class gates around level 30, 42, 60+, 80+, 90+, 105+ (Railgun), 130+, and 150+ (including Orchestra and Double Railgun). Comments on that page say some listed paths are wrong, so the in-game Index is the safer source.",
+      "source_url": "https://bloxinformer.com/wikis/tank-game/tanks",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-042",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Destructoid lists Flame as a group-join tank and Mega Freezer as a diamond-shop tank, treating both as strong close-range multi-fight options.",
+      "source_url": "https://www.destructoid.com/tank-game-tier-list/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-043",
+      "category": "update",
+      "subject": "update",
+      "claim": "Destructoid (updated 2026-08-17) published a long secondary active-code list that includes the four official strings plus older codes such as PREPAREYOURGEMS, NEWCHESTSOON, NEWPORTALS, HITBOXFIXED, TANKGAME2, GATLERPATH, HIGHERLVLS, TANKQUESTS, TANKCHESTS, APOLLO, ROCKETFIXED, DIONYSUS, NONUKES, TIKTANK, seasonal XMAS/Halloween/Thanksgiving strings, and IAMGROUP. This list is dated and conflicts with shorter official copy.",
+      "source_url": "https://www.destructoid.com/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-044",
+      "category": "update",
+      "subject": "update",
+      "claim": "Pro Game Guides (updated mid-August 2026) also still lists many older strings including PREPAREYOURGEMS, NEWCHESTSOON, NEWPORTALS, HITBOXFIXED, and seasonal codes. Treat as a secondary snapshot, not as official.",
+      "source_url": "https://progameguides.com/roblox/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-045",
+      "category": "update",
+      "subject": "update",
+      "claim": "Dexerto's 4 August 2026 list was already missing the four 2.4 official codes that later appeared on the Roblox page, showing how quickly third-party tables go stale.",
+      "source_url": "https://www.dexerto.com/roblox/tank-game-codes-3390196/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-046",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Rolimon's lists additional universe places besides the root, including Tank Game! [STARTER], [PRO], [MEGA], [STAGING], Tank Game! [TRADING], and Red VS Blue. Their exact matchmaking rules were not verified in-game.",
+      "source_url": "https://www.rolimons.com/game/119789365111500",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-047",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "Rolimon's snapshot around this check listed max players 20, average playtime about 12.43 minutes, and an all-time CCU peak of 53,284 on 21 November 2025. These tracker stats are dated.",
+      "source_url": "https://www.rolimons.com/game/119789365111500",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-048",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Eurogamer says developer 7x3 normally shares codes in the Discord and on the Roblox page. That matches the official page currently printing four codes.",
+      "source_url": "https://www.eurogamer.net/tank-game-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-049",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Destructoid describes the fantasy as building a war machine, upgrading damage and health, shooting everything, and dominating the arena — consistent with the official HOW TO PLAY block.",
+      "source_url": "https://www.destructoid.com/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-050",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "A SportsRant build-path article (2025-11-12) quotes later goals such as Double Railgun (L150), Orbitron Sr. (L150), Tundra (L130), and Mega Freezer (L80). Paths may have been rebalanced by 2.4; confirm in the Index.",
+      "source_url": "https://sportsrant.indiatimes.com/gaming/roblox-tank-game-build-path-guide-best-progression-routes-explained/articleshow/126632932.html",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-051",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "The Fandom 'Official Tank Game Wiki' beginner-guide snippet says some upgrades permanently lock other paths, and that players should not rush upgrades before learning how the tank feels. The same wiki's home has also called itself unofficial until BlueFan approves it.",
+      "source_url": "https://official-tank-game.fandom.com/wiki/Beginner_Guide",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-052",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Fandom's Tanks page says players start as the Default Tank at Level 0 and branch by gaining XP, and that not every tank is listed. Exotic tanks are described as coming from chests, spins, events, or quests.",
+      "source_url": "https://official-tank-game.fandom.com/wiki/Tanks",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-053",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "This 7x3 Tank Game is a different experience from Tank Simulator (place 15737628171) and Tank Game Simulator (place 17554856486).",
+      "source_url": "https://www.roblox.com/games/15737628171/Tank-Simulator",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-054",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Official text uses gems; BloxInformer and Sportskeeda often say Diamonds for the shop/stat-cap currency. Whether these are one currency with two names is not proven from official copy.",
+      "source_url": "https://www.sportskeeda.com/roblox-news/tank-game-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-055",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Beebom says later upgrades can raise damage, regeneration, and bullet speed, matching the official named stats of damage, health, and speed plus a broader E-menu.",
+      "source_url": "https://beebom.com/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-056",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "IAMGROUP appearing on secondary code lists is a hint that group membership is rewarded, but the official page does not print that code. Exact current group perk besides Flame (secondary) is unverified.",
+      "source_url": "https://www.destructoid.com/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-057",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Codes that grant XP (REBALANCEAGAIN, HAVEFUN) versus gems (NEWCURRENCY, HEADSTART) map onto the two official progress currencies: levels/stats versus shop unlocks.",
+      "source_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-058",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Badge award counts at this check show 100-shape badges are common (tens of millions awarded) while 10,000-shape badges are rare (low hundreds of thousands), so the long food grind is a real mid-game goal.",
+      "source_url": "https://badges.roblox.com/v1/universes/8520148363/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-059",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "Opening the codes UI in a live arena instead of the lobby is the most repeated secondary warning after exploit bans.",
+      "source_url": "https://www.gamesradar.com/games/simulation/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-060",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Try Hard Guides says the blue checkmark sits on the left underneath Buffs, then players enter a code in Enter code here! and hit Redeem. That is consistent with other left-HUD descriptions.",
+      "source_url": "https://tryhardguides.com/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-061",
+      "category": "update",
+      "subject": "update",
+      "claim": "Code names such as HITBOXFIXED, ROCKETFIXED, NEWPORTALS, TANKCHESTS, TANKQUESTS, GATLERPATH, and NEWCURRENCY are themselves patch notes: the 2.x line added hitbox/rocket fixes, portals, chests, quests, a Gatler path, and a gem currency push.",
+      "source_url": "https://www.destructoid.com/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-062",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "The official page frames Tank Game as an arena incremental: food for XP, upgrades for stats, PVP for gems, class unlocks for 150+ tanks.",
+      "source_url": "https://www.roblox.com/games/119789365111500/Tank-Game",
+      "source_type": "official",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-063",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "7x3 group page: https://www.roblox.com/communities/111185671 . Discord cited by guides: https://discord.com/invite/WgCdbaMrrq .",
+      "source_url": "https://groups.roblox.com/v1/groups/111185671",
+      "source_type": "creator",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-064",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "Canonical URL path is /games/119789365111500/Tank-Game. Live title decorations ([2.4], emoji) change with updates and should not be treated as the official_name.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=8520148363",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-065",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Sportskeeda's starting per-stat cap of 7 is dated 2026-06-30 and may have changed by version 2.4. Confirm in the E menu.",
+      "source_url": "https://www.sportskeeda.com/roblox-news/tank-game-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "low"
+    },
+    {
+      "id": "fact-066",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Rolimon's Offsale Gamepasses section also shows the hello pass as offsale, matching the official catalog.",
+      "source_url": "https://www.rolimons.com/game/119789365111500",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-067",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Destructoid's expired-code section on 2026-08-17 listed only ALLCODESASPROMISE (missing the final D), which is a reminder that near-miss strings fail.",
+      "source_url": "https://www.destructoid.com/tank-game-codes/",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-068",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "Retrying an already redeemed code will fail even if the string is still 'active' for other accounts.",
+      "source_url": "https://www.sportskeeda.com/roblox-news/tank-game-codes",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-069",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Food shapes are not only XP: they are also badge objectives, so a new player can treat 100 squares / triangles / pentagons as the first concrete goals after learning WASD.",
+      "source_url": "https://badges.roblox.com/v1/universes/8520148363/badges?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-070",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Level 15 is the first irreversible-feeling identity choice (class via Q). Secondary guides say later upgrades can lock other paths; use the Index before committing a late branch.",
+      "source_url": "https://bloxinformer.com/wikis/tank-game/tanks",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-071",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "No priced VIP or P2W pass was listed on the public game-pass catalog at this check. Do not invent a Titan price from older articles.",
+      "source_url": "https://apis.roblox.com/game-passes/v1/universes/8520148363/game-passes?passView=Full&pageSize=50",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-072",
+      "category": "update",
+      "subject": "update",
+      "claim": "The 2.4 title plus 17 August 2026 API update is the current version pin for this research pack. Stat rebalances after REBALANCEAGAIN may have shifted older tier lists.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=8520148363",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-073",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Server size 20 plus short average playtime on trackers implies many short arena lives, which is why spawn immunity and lobby code redemption matter.",
+      "source_url": "https://games.roblox.com/v1/games?universeIds=8520148363",
+      "source_type": "roblox",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    },
+    {
+      "id": "fact-074",
+      "category": "faq",
+      "subject": "faq",
+      "claim": "Official creator credit is the group 7x3, not an individual. supportTheBlueFan is the group owner, not a substitute By line.",
+      "source_url": "https://groups.roblox.com/v1/groups/111185671",
+      "source_type": "creator",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-075",
+      "category": "mistake",
+      "subject": "mistake",
+      "claim": "Treat the Fandom wiki as unofficial community notes unless 7x3 later marks it official. Do not cite it as the developer handbook.",
+      "source_url": "https://official-tank-game.fandom.com/wiki/Beginner_Guide",
+      "source_type": "secondary",
+      "checked_at": "2026-08-20T04:30:00Z",
+      "confidence": "medium"
+    }
+  ],
+  "new_player_guide": {
+    "first_10_minutes": [
+      "Join Tank Game by 7x3 at place 119789365111500. The live listing name is 💥 Tank Game! [2.4].",
+      "If a lobby exists, open the blue tick / checkmark on the left and redeem the four codes currently printed on the official Roblox page: REBALANCEAGAIN, HAVEFUN, NEWCURRENCY, HEADSTART.",
+      "Do not open the codes menu in a live fight; secondary guides say the game does not pause.",
+      "On spawn you have a short immunity window. Use WASD, shoot food shapes (squares, triangles, pentagons) for XP.",
+      "Treat 'destroy 100 squares / triangles / pentagons' as the first badge-sized goals.",
+      "Press E and spend the first stat points on bullet damage and bullet health, then HP or regen.",
+      "At level 15, press Q and pick a first class. BloxInformer lists Double, Scout, Spammer, Side, Grinder, and Freezer; Flame is reported as a 7x3 group option.",
+      "Optional: join group 111185671 before that first Q pick if you want the reported Flame / group perk.",
+      "After immunity, avoid idle farming in contested mid-map until your bullets can win trades.",
+      "Destroy other tanks when safe; official copy says that is how you earn gems.",
+      "Ignore offsale hello game pass and any old Titan-price rumors; the catalog showed no priced pass.",
+      "If you die often, reset in a quieter area and rebuild during the next immunity window rather than forcing 1v1s."
+    ],
+    "core_loop": [
+      "Shoot food shapes to gain XP and levels.",
+      "Spend a stat point each level in the E menu (damage, health, speed, fire rate, bullet health, regen, body damage, and related stats).",
+      "At class-upgrade levels (about every 15 levels, starting at 15), press Q to evolve along a path.",
+      "Use the in-game Index to see legal paths instead of memorizing blog trees.",
+      "Destroy other tanks to earn gems / diamonds.",
+      "Spend gems in the Tanks Shop and on raising stat caps.",
+      "Optional: join 7x3 for reported exclusive tanks such as Flame.",
+      "Redeem official page codes in the lobby for XP and gems.",
+      "Repeat lives are expected; average sessions on trackers are short.",
+      "Badge hunts (100 / 10,000 of each shape) give long-term PvE goals beside PVP."
+    ],
+    "progression_path": [
+      "Level 0–14: farm food under spawn immunity, stack bullet damage and bullet health, then HP or regen.",
+      "Level 15: first class via Q. This choice feeds later branches.",
+      "Levels ~30 and ~42: next class upgrades on the same path.",
+      "Spend gems to raise the per-stat cap (Sportskeeda said the start cap is 7; confirm in 2.4) and to unlock shop tanks.",
+      "Level 60+: BloxInformer says shop unlocks are required before some classes. Check the lobby Tanks Shop.",
+      "Later gates reported around 80 (Mega Freezer), 90, 105 (Railgun), 130, and 150 (Orchestra, Double Railgun, Orbitron Sr.). Confirm in the Index.",
+      "Ranged builds (Destructoid): Damage and Fire Rate; Rail also wants Penetration and Laser Range.",
+      "Melee builds: Health, Body Damage, and Speed.",
+      "Group tank: Flame, if still a 7x3 unlock at the first class choice.",
+      "Shop tank example: Mega Freezer, described as a diamond-shop close-range option.",
+      "Version 2.4 rebalance (REBALANCEAGAIN) may have moved older tier-list winners; prefer current Index + live feel.",
+      "Extra places named STARTER / PRO / MEGA / TRADING / Red VS Blue exist on trackers; pick them only after you know what they are."
+    ],
+    "common_mistakes": [
+      "Opening the codes UI in a live arena instead of the lobby.",
+      "Typing expired, mistyped, or already-redeemed codes. ALLCODESASPROMISE without the last D is a known near-miss.",
+      "Ignoring bullet health: after spawn immunity, weaker bullets lose the trade.",
+      "Picking omnidirectional (side/back barrel) tanks if the goal is 1v1 PVP.",
+      "Treating third-party tank trees as complete; BloxInformer comments already dispute its tables.",
+      "Using exploits; official page says exploiting bans are permanent and unappealable.",
+      "Confusing this 7x3 game with Tank Simulator or Tank Game Simulator.",
+      "Publishing Destructoid/PGG's 30+ code dump as the official working list.",
+      "Inventing gem prices, XP curves, or a full skill tree.",
+      "Calling the Fandom wiki official.",
+      "Assuming there is a priced VIP pass; the catalog showed only offsale hello.",
+      "Rushing the first Q upgrade before you know whether you want frontal DPS or farm-oriented barrels."
+    ],
+    "faq": [
+      "Who made Tank Game? Verified Roblox group 7x3 (id 111185671), owned by supportTheBlueFan.",
+      "What is the place ID? 119789365111500 (universe 8520148363).",
+      "How do I level up? Shoot food shapes for XP, spend points with E, evolve with Q.",
+      "How do I get gems? Official text: destroy tanks and earn gems. Codes also grant gems or XP.",
+      "Which codes are confirmed on the official page today? REBALANCEAGAIN, HAVEFUN, NEWCURRENCY, HEADSTART.",
+      "How do I redeem codes? Blue tick/checkmark on the left, enter the code, Redeem. Reported not case-sensitive and one-time.",
+      "What food exists? Badges name squares, triangles, and pentagons.",
+      "When is the first tank class? Level 15 via Q.",
+      "Is there a Discord? Guides cite https://discord.com/invite/WgCdbaMrrq.",
+      "Are gems and diamonds the same? Official copy says gems; some wikis say Diamonds. Not proven as two currencies.",
+      "Are there paid gamepasses? Public catalog showed only an offsale pass named hello.",
+      "How many unique tanks? Official description says over 150+.",
+      "Is the Fandom wiki official? It has described itself as unofficial until BlueFan approves it.",
+      "What is version 2.4? The live display-name tag at this check, last API update 2026-08-17."
+    ]
+  },
+  "keywords": {
+    "primary": [
+      "Tank Game",
+      "Tank Game Roblox",
+      "Tank Game wiki",
+      "Tank Game guide",
+      "Tank Game 7x3",
+      "Tank Game 2.4",
+      "Tank Game codes",
+      "Tank Game beginner guide",
+      "tankgame.wiki",
+      "Tank Game tanks",
+      "Tank Game gems",
+      "Tank Game Index"
+    ],
+    "secondary": [
+      "REBALANCEAGAIN",
+      "HAVEFUN Tank Game",
+      "NEWCURRENCY",
+      "HEADSTART Tank Game",
+      "Tank Game Railgun",
+      "Tank Game Orbitron",
+      "Tank Game Flame",
+      "Tank Game Mega Freezer",
+      "Tank Game level 15",
+      "Tank Game spawn immunity",
+      "Tank Game squares triangles pentagons",
+      "Tank Game Diamonds",
+      "Tank Game Discord",
+      "Tank Game Red VS Blue",
+      "Tank Game STARTER PRO MEGA",
+      "supportTheBlueFan",
+      "Tank Game vs Tank Simulator",
+      "Tank Game Q upgrade"
+    ],
+    "search_intent": [
+      "how to play Tank Game Roblox",
+      "Tank Game codes August 2026",
+      "how to redeem Tank Game codes",
+      "Tank Game first stats to upgrade",
+      "Tank Game level 15 upgrades",
+      "best tanks in Tank Game 2.4",
+      "Tank Game build path Index",
+      "Tank Game gems or diamonds",
+      "Tank Game Flame group unlock",
+      "Tank Game spawn immunity",
+      "does Tank Game pause for codes",
+      "Tank Game badge list",
+      "Tank Game place id",
+      "Tank Game 150 tanks",
+      "why Tank Game code not working",
+      "Tank Game beginner first 10 minutes",
+      "Tank Game ranged vs melee stats",
+      "Tank Game exploit ban"
+    ]
+  },
+  "uncertainties": [
+    "Secondary code lists disagree. Official page lists only four strings. Destructoid/PGG/Dexerto still publish many older codes that were not printed on the official page at this check. No in-game redemption check was run.",
+    "Official text uses gems; BloxInformer and Sportskeeda often say Diamonds. Not proven whether they are one currency or two.",
+    "Starting per-stat cap of 7 is Sportskeeda-only and may have changed in 2.4.",
+    "BloxInformer / Fandom / SportsRant tank trees are incomplete or contested. Destructoid removed its path section because an in-game Index exists.",
+    "Exact spawn-immunity duration, food XP values, level curve, and full E-menu names/caps were not confirmed on an official page.",
+    "No priced gamepasses were listed. Older Titan / P2W mentions are unverified.",
+    "Rolimon's extra places exist as names, but queue rules and which one new players should pick were not documented.",
+    "Fandom wiki was only partially readable (Cloudflare) and has called itself unofficial.",
+    "Exact in-game reward for joining 7x3 is not specified beyond group 'perks' plus secondary Flame reports.",
+    "Live CCU, visits, likes, favorites, and Rolimon's playtime/peak figures change constantly."
+  ],
+  "forbidden_claims": [
+    "Do not treat Tank Simulator or Tank Game Simulator as this game.",
+    "Do not publish a canonical currently-working codes list beyond the four official description strings without a fresh in-game check.",
+    "Do not present the Fandom wiki as developer-approved.",
+    "Do not treat BloxInformer's full tank table as complete or current.",
+    "Do not invent gem/diamond prices, XP tables, or a full skill tree.",
+    "Do not present live CCU, visits, likes, or favorites as evergreen facts.",
+    "Do not claim on-sale gamepasses or a priced Titan pass; the public catalog showed only an offsale hello pass.",
+    "Do not claim exploiting bans can be appealed.",
+    "Do not copy long passages from Roblox or third-party guides into site copy."
+  ],
+  "suggested_topics": [
+    "First 10 minutes: lobby codes, spawn immunity, food shapes, E stats, Q at 15",
+    "Core loop: food XP, stat points, class upgrades, gems from kills",
+    "Official 2.4 codes page with only the four Roblox-page strings highlighted",
+    "How to redeem the blue-tick codes, lobby warning, one-time / not case-sensitive reports",
+    "Why third-party 30+ code dumps disagree with the official page",
+    "Badge guide: 100 and 10,000 squares, triangles, pentagons",
+    "Early stats: bullet damage, bullet health, then HP or regen",
+    "Level 15 class choice and reported Flame group unlock",
+    "How to use the in-game Index instead of blog trees",
+    "Ranged vs melee stat priorities (Destructoid)",
+    "Frontal vs omnidirectional tanks for PVP",
+    "Gems vs Diamonds naming, shop unlocks, stat caps",
+    "Version 2.4 / REBALANCEAGAIN as a rebalance pin",
+    "7x3 group + Discord as the live announcement pair",
+    "Extra places (STARTER / PRO / MEGA / TRADING / Red VS Blue) as unverified extras",
+    "How this Tank Game differs from other Roblox tank titles",
+    "Exploit-ban warning as a first-class FAQ",
+    "Beginner mistakes: coding in combat, ignoring bullet health, rushing Q"
+  ],
+  "suggested_page_map": [
+    {
+      "path": "/",
+      "purpose": "Hub: 2.4 loop, 150+ tanks, CTA to beginner guide"
+    },
+    {
+      "path": "/beginner-guide",
+      "purpose": "Immunity, food, E/Q, level 15"
+    },
+    {
+      "path": "/codes",
+      "purpose": "Four official strings first; secondary lists clearly dated"
+    },
+    {
+      "path": "/tanks",
+      "purpose": "How classes work + Index warning, not a fake complete tree"
+    },
+    {
+      "path": "/stats",
+      "purpose": "Early stat order, ranged vs melee"
+    },
+    {
+      "path": "/badges",
+      "purpose": "Squares, triangles, pentagons 100 / 10,000"
+    },
+    {
+      "path": "/gems",
+      "purpose": "Gems from kills, shop unlocks, diamonds naming"
+    },
+    {
+      "path": "/faq",
+      "purpose": "IDs, exploit ban, Discord, not other tank games"
+    }
+  ]
+}
