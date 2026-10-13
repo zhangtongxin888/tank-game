@@ -13,7 +13,7 @@ const readPublic = (relativePath) =>
 
 test("the complete static production contract passes", async () => {
   const result = await validateStaticSite();
-  assert.deepEqual(result, { routes: 8, sitemapUrls: 8 });
+  assert.deepEqual(result, { routes: 9, sitemapUrls: 9 });
 });
 
 test("all required public files are represented by the route contract", () => {
@@ -26,6 +26,7 @@ test("all required public files are represented by the route contract", () => {
     "/badges/",
     "/gems/",
     "/faq/",
+    "/sources/",
   ]);
 });
 

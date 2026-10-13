@@ -13,6 +13,7 @@ export const routeFiles = new Map([
   ["/badges/", "badges/index.html"],
   ["/gems/", "gems/index.html"],
   ["/faq/", "faq/index.html"],
+  ["/sources/", "sources/index.html"],
 ]);
 
 const activeCodes = new Set([
