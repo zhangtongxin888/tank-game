@@ -1,7 +1,7 @@
 {
   "status": "adsterra-ready",
   "adNetwork": "adsterra",
-  "adNetworkSource": "default",
+  "adNetworkSource": "handoff",
   "releaseBlocking": false,
   "browserAdRequestCheck": "required-after-deploy",
   "runtime": "classic-defer",
@@ -10,11 +10,7 @@
   "enablePopunder": false,
   "enableSocialBar": false,
   "adsTxt": "omitted-no-platform-line",
-  "cspHosts": [
-    "https://www.highperformanceformat.com",
-    "https://*.highperformanceformat.com",
-    "https://*.effectivecpmnetwork.com"
-  ],
+  "cspHosts": [],
   "pages": {
     "injected": [
       "badges/index.html",
@@ -26,16 +22,19 @@
       "stats/index.html",
       "tanks/index.html"
     ],
-    "legalSkipped": [],
+    "legalSkipped": [
+      "sources/index.html"
+    ],
     "visibleSlotCounts": {
-      "badges/index.html": 1,
-      "beginner-guide/index.html": 1,
-      "codes/index.html": 1,
-      "faq/index.html": 1,
-      "gems/index.html": 1,
-      "index.html": 1,
-      "stats/index.html": 1,
-      "tanks/index.html": 1
+      "badges/index.html": 3,
+      "beginner-guide/index.html": 3,
+      "codes/index.html": 3,
+      "faq/index.html": 3,
+      "gems/index.html": 3,
+      "index.html": 3,
+      "sources/index.html": 0,
+      "stats/index.html": 3,
+      "tanks/index.html": 3
     }
   },
   "trackedFiles": [
@@ -45,9 +44,9 @@
     "faq/index.html",
     "gems/index.html",
     "index.html",
+    "sources/index.html",
     "stats/index.html",
     "tanks/index.html",
-    "_headers",
     "adsterra/runtime.js"
   ]
 }
