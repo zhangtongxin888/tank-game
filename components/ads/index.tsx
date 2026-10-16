@@ -110,7 +110,7 @@ function normalizeScriptUrl(url?: string) {
 function getBannerScriptUrl(config: BannerConfig) {
   if (config.scriptUrl) return normalizeScriptUrl(config.scriptUrl);
   if (!config.key) return undefined;
-  return `https://www.highperformanceformat.com/${config.key}/invoke.js`;
+  return `https://bauval.org/22/${config.key}`;
 }
 
 function hasBannerSlot(size: BannerSize) {
