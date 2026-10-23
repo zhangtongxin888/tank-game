@@ -7,7 +7,10 @@
    Local change (foreverago-wiki, theescapists3wiki): banners are queued until the previous
    banner script loads (upstream waited only 50 ms, so atOptions raced), and
    the top banner picks the widest variant allowed by the screen (upstream
-   always ended on the 320x50 entry). */
+   always ended on the 320x50 entry).
+   Local change (2026-10-23, shared by every Adsterra Popunder site): Popunder
+   capped at 3 per visitor per local calendar day (localStorage). A page view
+   counts once, on its first click after the Popunder script has loaded. */
 (function () {
   "use strict";
 
@@ -140,6 +143,54 @@
     var script = document.createElement("script");
     script.id = id;
     script.async = true;
+    script.setAttribute("data-cfasync", "false");
+    script.src = url;
+    document.body.appendChild(script);
+  }
+
+  /* Popunder: at most POP_DAILY_MAX per visitor per local calendar day.
+     The Adsterra Popunder script, once loaded, opens a popunder on a user
+     click, so each page view that receives a click after the script loaded
+     is counted once. When today's count has reached the cap, the script is
+     not inserted at all, so no Popunder request is made. A click before the
+     script loads, or a failed load, never counts. The count lives in
+     localStorage as {"d":"YYYY-MM-DD","n":count} and resets on a new day.
+     If storage is unavailable the script is not loaded (fail closed). */
+  var POP_KEY = "adsterra-popunder-daily";
+  var POP_DAILY_MAX = 3;
+  function today() {
+    var d = new Date();
+    var m = d.getMonth() + 1;
+    var day = d.getDate();
+    return d.getFullYear() + "-" + (m < 10 ? "0" : "") + m + "-" + (day < 10 ? "0" : "") + day;
+  }
+  function readPopCount() {
+    try {
+      var raw = JSON.parse(window.localStorage.getItem(POP_KEY) || "null");
+      if (raw && raw.d === today()) return Number(raw.n) || 0;
+      return 0;
+    } catch (e) {
+      return -1;
+    }
+  }
+  function countPop() {
+    try {
+      var n = readPopCount();
+      if (n < 0) n = 0;
+      window.localStorage.setItem(POP_KEY, JSON.stringify({ d: today(), n: n + 1 }));
+    } catch (e) {}
+  }
+  function addPopunder(url) {
+    if (!url || document.getElementById("adsterra-popunder")) return;
+    var used = readPopCount();
+    if (used < 0 || used >= POP_DAILY_MAX) return;
+    var script = document.createElement("script");
+    script.id = "adsterra-popunder";
+    script.async = true;
+    script.setAttribute("data-cfasync", "false");
+    script.addEventListener("load", function () {
+      document.addEventListener("click", countPop, { capture: true, once: true });
+    });
     script.src = url;
     document.body.appendChild(script);
   }
@@ -151,7 +202,7 @@
   if (visibleCount() > 3) return;
   mountSlots(slots);
   if (config.enablePopunder && config.popunderScriptUrl) {
-    addScript("adsterra-popunder", config.popunderScriptUrl);
+    addPopunder(config.popunderScriptUrl);
   }
   if (config.enableSocialBar && config.socialBarScriptUrl && visibleCount() < 3) {
     addScript("adsterra-social-bar", config.socialBarScriptUrl);
