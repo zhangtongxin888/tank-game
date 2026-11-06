@@ -17,10 +17,11 @@ export const routeFiles = new Map([
 ]);
 
 const activeCodes = new Set([
-  "REBALANCEAGAIN",
-  "HAVEFUN",
-  "NEWCURRENCY",
-  "HEADSTART",
+  "HUGEREBALANCE",
+  "FOODPHYSICS",
+  "VIPREMOVED",
+  "HALLOWEEN",
+  "4TEAMSHYPE",
 ]);
 
 const readPublic = (relativePath) =>
@@ -73,7 +74,7 @@ export async function validateStaticSite() {
 
   const codesPage = routeSources.get("/codes/");
   const copyCodes = new Set(extractAll(codesPage, /data-copy="([A-Z0-9]+)"/g));
-  assert.deepEqual(copyCodes, activeCodes, "only the four approved codes may be copy cards");
+  assert.deepEqual(copyCodes, activeCodes, "only the five approved official codes may be copy cards");
 
   const sitemap = await readPublic("sitemap.xml");
   const sitemapUrls = new Set(extractAll(sitemap, /<loc>([^<]+)<\/loc>/g));

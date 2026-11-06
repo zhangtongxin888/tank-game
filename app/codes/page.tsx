@@ -5,17 +5,18 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-  title: "Codes",
+  title: "Tank Game Codes (Nov 2026)",
   description:
-    "Tank Game codes checked against the official Roblox page, plus a safe redemption walkthrough.",
+    "Five official Tank Game 2.5 codes from the Roblox page (HUGEREBALANCE, FOODPHYSICS, VIPREMOVED, HALLOWEEN, 4TEAMSHYPE), checked Nov 5, 2026.",
   path: "/codes",
 });
 
 const codes = [
-  { code: "REBALANCEAGAIN", reward: "250,000 XP", type: "XP BOOST" },
-  { code: "HAVEFUN", reward: "200,000 XP", type: "XP BOOST" },
-  { code: "NEWCURRENCY", reward: "50,000 gems", type: "GEMS" },
-  { code: "HEADSTART", reward: "25,000 gems", type: "GEMS" },
+  { code: "HUGEREBALANCE", reward: "500,000 XP", type: "XP BOOST" },
+  { code: "FOODPHYSICS", reward: "250,000 XP", type: "XP BOOST" },
+  { code: "VIPREMOVED", reward: "150,000 XP", type: "XP BOOST" },
+  { code: "HALLOWEEN", reward: "50,000 gems", type: "GEMS" },
+  { code: "4TEAMSHYPE", reward: "25,000 gems", type: "GEMS" },
 ];
 
 export default function CodesPage() {
